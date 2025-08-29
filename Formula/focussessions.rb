@@ -17,11 +17,8 @@ class Focussessions < Formula
     assert_path_exists bin/"focussessions"
     assert_predicate bin/"focussessions", :executable?
 
-    # Test that the binary can be executed (since this is an interactive app)
-    begin
-      system bin/"focussessions", "--version"
-    rescue
-      # Expected to fail since --version is not supported, just verify it's executable
-    end
+    # Test version output
+    output = shell_output("#{bin}/focussessions --version")
+    assert_match "Focus Sessions v#{version}", output
   end
 end
