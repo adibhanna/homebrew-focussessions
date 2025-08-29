@@ -2,7 +2,7 @@ class Focussessions < Formula
   desc "Beautiful CLI tool for managing focus sessions and tracking productivity"
   homepage "https://github.com/adibhanna/focussessions"
   url "https://github.com/adibhanna/focussessions/archive/refs/tags/v1.0.3.tar.gz"
-  sha256 "f004dc8e934da22412e6fc308005b517eaf2757b99ef1a1a27503d30ba681c73"
+  sha256 "77cc54d00d88324adcd7135df9ef89bcc90eafa023f768fdf5e86789e0ceb3b1"
   license "MIT"
   head "https://github.com/adibhanna/focussessions.git"
 
